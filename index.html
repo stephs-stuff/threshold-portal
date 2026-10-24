@@ -5,6 +5,34 @@
 <link rel="manifest" href="manifest.webmanifest">
 <style>
 :root{--ink:#302923;--paper:#f5efdf;--cream:#fffaf0;--wine:#693c3d;--forest:#364b3d;--brass:#a47d44;--muted:#6e655b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#292724;color:var(--ink);font:17px/1.65 Georgia,'Times New Roman',serif}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #b67d26;outline-offset:4px}.shell{max-width:1160px;margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 0 50px #0004}header{background:#302b28;color:#f4e9d1;padding:18px clamp(20px,5vw,70px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border-bottom:3px solid var(--brass)}.brand{text-decoration:none;font-size:1.35rem;letter-spacing:.11em;text-transform:uppercase}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font: .85rem/1.4 system-ui,sans-serif;text-decoration:none;color:#f3e6d1}nav a:hover{text-decoration:underline}.hero{padding:100px 24px 90px;text-align:center;background:radial-gradient(ellipse at center,#f9f2df 0%,#e9dec7 80%);border-bottom:1px solid #c5b59b}.eyebrow{text-transform:uppercase;letter-spacing:.26em;color:var(--wine);font:700 .75rem system-ui,sans-serif}.hero h1{font-weight:normal;font-size:clamp(3.2rem,8vw,6.6rem);line-height:1.1;margin:22px 0 14px}.hero p{max-width:650px;margin:0 auto 30px;font-size:1.22rem;color:#55493d}.rule{width:80px;height:2px;background:var(--brass);margin:24px auto}.button{display:inline-block;background:var(--forest);color:#fff9eb;text-decoration:none;padding:12px 24px;border-radius:3px;font:600 .9rem system-ui,sans-serif}.button:hover{background:#24392c}.content{padding:55px clamp(20px,6vw,76px)}h2{font-weight:normal;font-size:2.4rem;margin:0 0 8px}h3{font-weight:normal;font-size:1.5rem;margin:0 0 8px}.intro{color:var(--muted);max-width:680px;margin:0 0 28px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:20px}.card{background:var(--cream);border:1px solid #d9cdb9;border-top:4px solid var(--brass);padding:26px;box-shadow:0 3px 8px #3322110b}.card .num{font:.72rem system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--wine)}.card p{color:#5c5248}.card a{font:600 .85rem system-ui,sans-serif;color:var(--wine)}.feature{background:#e8dfcd;border-top:1px solid #c8bba4;border-bottom:1px solid #c8bba4;padding:54px clamp(20px,6vw,76px)}.feature-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:38px;align-items:center}.book{border:7px double #bca27c;padding:35px 20px;background:#4a3b35;color:#f6ebd6;text-align:center;min-height:260px;display:flex;flex-direction:column;justify-content:center;box-shadow:8px 10px 0 #c6b79e}.book strong{font-weight:normal;font-size:2rem}.book span{font:.75rem system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#e7ce9d}.reading{background:var(--cream);padding:55px clamp(20px,10vw,140px)}.reading p{max-width:68ch}.reading blockquote{margin:30px 0;padding:15px 26px;border-left:3px solid var(--brass);font-size:1.28rem;font-style:italic}.note{border:1px solid #d6c8b0;padding:20px;background:#f4ecdb;font-size:.93rem}.quiet{color:var(--muted);font-size:.88rem}footer{background:#302b28;color:#e8dcc7;text-align:center;padding:32px 20px;font-size:.88rem}footer a{color:#f0d8a6}.skip{position:absolute;top:-60px;left:12px;background:white;padding:8px;z-index:3}.skip:focus{top:10px}@media(max-width:680px){.hero{padding:65px 20px}.feature-inner{grid-template-columns:1fr}.book{min-height:190px}.content,.reading{padding-top:38px;padding-bottom:38px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* A softer literary salon: faded rose, sage, ivory, and delicate ornament */
+:root{--paper:#f7f0e8;--cream:#fffaf5;--wine:#86535b;--forest:#465b4d;--brass:#b18c65;--muted:#70645f}
+body{background:#453a39}
+.shell{box-shadow:0 0 65px #1e161533}
+header,footer{background:#403535}
+header{border-bottom:2px solid #bc987d}
+.hero{position:relative;background:radial-gradient(ellipse at 50% 40%,#fff9f1 0%,#f3e6dc 62%,#e8d7cf 100%);border-bottom:1px solid #dbc8bb}
+.hero:before,.hero:after{content:"❦";position:absolute;color:#b78b8b;font-size:2rem;opacity:.72}
+.hero:before{top:24px;left:clamp(22px,8vw,120px)}.hero:after{bottom:20px;right:clamp(22px,8vw,120px);transform:rotate(180deg)}
+.hero h1{letter-spacing:.018em;color:#48383a}
+.hero .rule{height:1px;width:125px;background:linear-gradient(90deg,transparent,#b98f80,transparent)}
+.hero p{color:#655653}
+.button{background:#79545c;border-radius:24px;padding:12px 27px;box-shadow:0 3px 8px #6c45431c}
+.button:hover{background:#613f48}
+.content{background:linear-gradient(180deg,#f9f3eb,#f5ece5)}
+.card{background:#fffbf6;border:1px solid #e2d2c7;border-top:3px solid #ba9692;border-radius:12px 12px 5px 5px;box-shadow:0 7px 20px #5e45400d;transition:transform .18s ease,box-shadow .18s ease}
+.card:nth-child(2){border-top-color:#9bafa0}.card:nth-child(3){border-top-color:#c7aa80}.card:nth-child(4){border-top-color:#bca1ad}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 22px #5e45401a}
+.card h3{color:#61464a}.card .num{color:#8b6268}
+.feature{background:linear-gradient(135deg,#ede0dc,#eee6db);border-color:#dcc8bd}
+.book{background:#665057;border-color:#c6a89d;box-shadow:8px 10px 0 #d9c7bd;border-radius:3px}
+.book span{color:#f0d7bd}
+.reading{background:#fffaf4}
+.reading blockquote{border-left-color:#ba9692;color:#674c51}
+.note{background:#f9f0e9;border-color:#e1cfc3;border-radius:8px}
+footer .quiet{color:#dfccc1}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
 </style></head>
 <body><a class="skip" href="#main">Skip to content</a><div class="shell">
 <header><a class="brand" href="#top">The Threshold</a><nav aria-label="Main navigation"><a href="#spaces">Explore</a><a href="#reading-room">Reading Room</a><a href="#cafe">Café Philosophique</a><a href="#journal">Field Journal</a></nav></header>
