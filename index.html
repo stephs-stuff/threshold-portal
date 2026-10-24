@@ -33,6 +33,31 @@ header{border-bottom:2px solid #bc987d}
 .note{background:#f9f0e9;border-color:#e1cfc3;border-radius:8px}
 footer .quiet{color:#dfccc1}
 @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+
+/* Art Nouveau-inspired metallic gold filigree — restrained and decorative */
+:root{--gold:#bd985a;--gold-light:#ead4a1;--gold-deep:#8b672e}
+header{position:relative;border-bottom:1px solid var(--gold)}
+header:after{content:"";position:absolute;bottom:3px;left:3%;right:3%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);pointer-events:none}
+.hero{overflow:hidden}
+.hero:before,.hero:after{content:"❧";color:var(--gold-deep);font-size:3rem;opacity:.8;text-shadow:1px 1px 0 var(--gold-light)}
+.hero h1{position:relative;text-shadow:0 1px 0 #fff8ed}
+.hero .rule{width:180px;height:14px;background:none;position:relative;margin:18px auto 24px}
+.hero .rule:before{content:"❦";position:absolute;inset:-13px 0 auto;text-align:center;font-size:1.5rem;color:var(--gold-deep);text-shadow:1px 1px var(--gold-light)}
+.hero .rule:after{content:"";position:absolute;top:7px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero .eyebrow{color:#805b42}
+.content>.eyebrow:before,.feature .eyebrow:before,.reading>.eyebrow:before{content:"✧";color:var(--gold-deep);margin-right:.65em}
+.card{position:relative;overflow:hidden}
+.card:after{content:"❦";position:absolute;right:14px;bottom:5px;font-size:2.3rem;color:var(--gold);opacity:.25;pointer-events:none}
+.card:before{content:"";position:absolute;inset:8px;border:1px solid rgba(177,140,79,.22);border-radius:7px;pointer-events:none}
+.card:nth-child(2):after{content:"❧"}.card:nth-child(3):after{content:"✧"}.card:nth-child(4):after{content:"❀"}
+.book{position:relative;border:2px solid var(--gold);outline:1px solid var(--gold-light);outline-offset:-10px;background:linear-gradient(145deg,#725b60,#4c393e);box-shadow:8px 10px 0 #d9c7bd, inset 0 0 0 7px #5b454c}
+.book:before,.book:after{content:"❦";position:absolute;left:50%;transform:translateX(-50%);color:var(--gold-light);font-size:1.45rem}
+.book:before{top:17px}.book:after{bottom:14px;transform:translateX(-50%) rotate(180deg)}
+.book strong{color:#fff4df;text-shadow:0 1px 2px #281b1b}
+.reading blockquote{position:relative;border-left:2px solid var(--gold);background:linear-gradient(90deg,#f9f0e7,transparent)}
+.reading blockquote:after{content:"✧";position:absolute;right:10px;bottom:2px;color:var(--gold);font-size:1.5rem}
+footer{border-top:2px solid var(--gold-deep)}
+@media(forced-colors:active){.card:before,.hero .rule:after{display:none}}
 </style></head>
 <body><a class="skip" href="#main">Skip to content</a><div class="shell">
 <header><a class="brand" href="#top">The Threshold</a><nav aria-label="Main navigation"><a href="#spaces">Explore</a><a href="#reading-room">Reading Room</a><a href="#cafe">Café Philosophique</a><a href="#journal">Field Journal</a></nav></header>
